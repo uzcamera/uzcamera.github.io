@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UZ影视 APP 官方最新版 | 附详细使用教程及视频订阅源</title>
+    <meta name="description" content="UZ影视是一款功能强大的多平台视频播放与管理软件，支持Windows、Mac、Android、iOS等多种操作系统，提供便捷的影音播放体验，支持添加多种数据源，是追剧爱好者的不二之选，无需会员即可随时随地享受优质的观影体验。">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <style>
+        :root {
+            --primary-color: #FF5E57; /* 红色调，适合影视主题 */
+            --secondary-color: #f8f9fa; /* Light grey */
+            --accent-color: #FF3E36; /* 深红色，用于悬停效果 */
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://pic1.imgdb.cn/item/67c0250dd0e0a243d40719a1.jpg'); 
+            background-position: center center;
+            background-size: cover;
+            color: white;
+            padding: 120px 0;
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        .testimonial-card {
+            border-left: 4px solid var(--primary-color);
+        }
+        .download-section {
+            background-color: var(--secondary-color);
+        }
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        .btn-primary:hover {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+        .btn-outline-light:hover {
+            color: var(--primary-color);
+        }
+        .feature-box {
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        .feature-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .anime-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            background-color: rgba(93, 135, 255, 0.1); /* Adjusted for new primary color */
+            color: var(--primary-color);
+            margin-right: 8px;
+            margin-bottom: 8px;
+            font-size: 14px;
+            border: 1px solid var(--primary-color);
+        }
+        .usage-tips-section {
+            background-color: #F0F5FF; /* Light blue background */
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--primary-color);
+        }
+        .usage-tips-section h5 {
+            color: var(--primary-color);
+        }
+        .usage-tips-section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .usage-tips-section ul li {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .usage-tips-section ul li i {
+            color: var(--primary-color);
+            margin-right: 10px;
+            margin-top: 4px;
+        }
+        .code-block {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 10px;
+            font-family: monospace;
+            overflow-x: auto;
+            margin-bottom: 10px;
+            border: 1px solid #dee2e6;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">UZ影视</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">软件介绍</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">功能特色</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#usage-tips">使用教程</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#download">立即下载</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">UZ影视 v1.6.52</h1>
+            <p class="lead mb-5">功能强大的多平台视频播放与管理软件<br>支持多种操作系统，随时随地享受优质观影体验</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#download" class="btn btn-primary btn-lg px-4 py-2">立即下载</a>
+                <a href="#features" class="btn btn-outline-light btn-lg px-4 py-2">查看特色</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <!-- UZ影视截图 -->
+                    <img src="https://img.stw6.com/i/2025/01/06/nqn2e7.webp" alt="UZ影视界面预览" class="img-fluid rounded shadow-lg">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">UZ影视介绍</h2>
+                    <p class="lead">UZ影视是一款功能强大的多平台视频播放与管理软件。</p>
+                    <p class="mb-4">UZ影视支持多种操作系统（包括Windows、Mac、Android、iOS等），旨在为用户提供便捷的影音播放体验，是追剧爱好者的不二之选。无论是日常娱乐还是长途旅行，都能让您随时随地享受优质的观影体验。软件本身是个空壳软件，需要添加数据源之后才可以正常使用，支持添加多种数据源，包括阿里、夸克、UC、天翼等网盘源。</p>
+
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-3">核心优势</h5>
+                        <span class="anime-badge">多平台支持</span>
+                        <span class="anime-badge">视频嗅探</span>
+                        <span class="anime-badge">多种数据源</span>
+                        <span class="anime-badge">网盘资源读取</span>
+                        <span class="anime-badge">直播源支持</span>
+                        <span class="anime-badge">字幕记录</span>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-tv text-success me-2"></i>
+                        <span>多平台支持：支持Windows、Mac、Android、iOS等多种操作系统</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-film text-success me-2"></i>
+                        <span>多种数据源：支持添加阿里、夸克、UC、天翼等网盘源</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-broadcast-tower text-success me-2"></i>
+                        <span>直播源支持：可添加多种直播源，观看电视直播</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-play-circle text-success me-2"></i>
+                        <span>视频嗅探：支持视频嗅探功能，轻松获取视频资源</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">功能特色</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="card feature-box border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-desktop feature-icon"></i>
+                                <h4 class="card-title fw-bold">视频嗅探功能</h4>
+                            </div>
+                            <p class="card-text">支持视频嗅探功能，轻松获取视频资源。最新版本优化了扩展调试功能，修复了片尾设置和部分源不能下载的问题，让您的观影体验更加流畅。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-box border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-layer-group feature-icon"></i>
+                                <h4 class="card-title fw-bold">网盘资源读取</h4>
+                            </div>
+                            <p class="card-text">支持读取阿里、夸克、UC网盘资源，通过网盘扩展v11版本，可以轻松访问首页选源弹窗顶部的云朵按钮，获取更多资源。同时支持多线程检测，提高资源加载速度。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-box border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-film feature-icon"></i>
+                                <h4 class="card-title fw-bold">多平台兼容</h4>
+                            </div>
+                            <p class="card-text">支持Windows、Mac、Android、iOS等多种操作系统，无论您使用什么设备，都能享受UZ影视带来的优质观影体验。TV端还补全了播放设置，让大屏观影更加舒适。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card feature-box border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-cog feature-icon"></i>
+                                <h4 class="card-title fw-bold">播放功能增强</h4>
+                            </div>
+                            <p class="card-text">修复播放下载视频无法记录进度问题，增加字幕记录功能，优化弹幕匹配(v8)。桌面端下载列表支持右键菜单，让您的操作更加便捷，观影体验更加流畅。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card feature-box border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-broadcast-tower feature-icon"></i>
+                                <h4 class="card-title fw-bold">直播源支持</h4>
+                            </div>
+                            <p class="card-text">支持添加多种直播源，可以通过YanG-1989大佬的直播源分享网站获取各类直播资源，满足您的电视直播需求。添加后即可在底部小电视图标处访问直播内容。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="usage-tips" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">使用教程</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="usage-tips-section">
+                        <p class="text-center mb-3"><strong>UZ影视使用教程</strong></p>
+                        <p>UZ影视本身是个空壳软件，需要添加数据源之后才可以正常使用。以下是详细的使用教程：</p>
+                        
+                        <h5 class="mt-4">1. 输入链接添加（推荐）</h5>
+                        <p><strong>入口：</strong></p>
+                        <p>uz影视 -> 设置 -> 数据管理 -> 订阅 -> 添加 -> 输入以下链接(二选一或分次全都要) -> 确定(添加过程较慢)</p>
+                        
+                        <p><strong>阿里|夸克|UC| VOD 源:</strong></p>
+                        <div class="code-block">
+                            https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/refs/heads/main/uzAio.json
+                        </div>
+                        
+                        <p><strong>阿里|夸克|UC|天翼|网盘源:</strong></p>
+                        <div class="code-block">
+                            https://ghproxy.cn/https://raw.githubusercontent.com/proversion2024/uz-extensions/refs/heads/master/uzAio.json
+                        </div>
+                        
+                        <h5 class="mt-4">2. 网页添加</h5>
+                        <p>在浏览器打开网页（部分网络可能无法打开）：</p>
+                        <div class="code-block">
+                            https://uz-video-five.vercel.app/install.html
+                        </div>
+                        <p>找到需要添加的资源，点击添加自动跳转到uz影视并完成添加，如果点了没反应就点特殊添加</p>
+                        <p><strong>注意：</strong>需要允许浏览器跳转到外部APP，最好把uz影视打开挂在后台，如果还是无法添加就复制链接，粘贴到以下入口手动添加</p>
+                        <p><strong>入口：</strong></p>
+                        <p>uz影视 -> 设置 -> 数据管理 -> 订阅 -> +</p>
+                        
+                        <h5 class="mt-4">3. 直播源添加</h5>
+                        <p>进入 YanG-1989 大佬的直播源分享网站：</p>
+                        <div class="code-block">
+                            https://yang-1989.eu.org/
+                        </div>
+                        <p>点击 想要添加的直播类型 自动复制</p>
+                        <p><strong>直播源添加：</strong></p>
+                        <p>uz影视 -> 设置 -> 数据管理 -> 直播源 -> + -> 输入任意名称 -> 输入刚刚复制的链接 -> 确定</p>
+                        <p>uz影视 -> 点击底部小电视 -> 点击顶部小电视 -> 选择添加的直播源 -> 点击右上角切换展示分类</p>
+                        
+                        <h5 class="mt-4">4. 其它设置</h5>
+                        <p><strong>推荐扩展：</strong></p>
+                        <p>uz影视 -> 设置 -> 数据管理 -> 推荐扩展 -> 点击扩展 -> 启用推荐主页 -> 重启 app</p>
+                        
+                        <p><strong>网盘工具扩展：</strong></p>
+                        <p>uz影视 -> 设置 -> 数据管理 -> 网盘工具扩展 -> 点击扩展 -> 重启 app</p>
+                        
+                        <h5 class="mt-4">5. Cookie 设置</h5>
+                        <p><strong>UC | 夸克 | 天翼：</strong></p>
+                        <p>uz影视 -> 设置 -> 数据管理 -> 环境变量 -> 点击右上角按钮 -> 点击 cookie 按钮 -> 选择 uc 或 夸克 -> 登录 -> 点击右上角 -> 点击登录的类型 -> 确定绑定</p>
+                        
+                        <p><strong>阿里 (两个都要填！需要手动复制)：</strong></p>
+                        <p>uz影视 -> 设置 -> 数据管理 -> 环境变量 -> 点击右上角按钮 -> 点击 cookie 按钮 -> 选择 阿里 32 -> 扫码登录 -> 复制一串 数字与字母的混合文本 -> 返回 -> 点击 阿里 32 的那个笔 -> 粘贴 -> 确定</p>
+                        <p>uz影视 -> 设置 -> 数据管理 -> 环境变量 -> 点击右上角按钮 -> 点击 cookie 按钮 -> 选择 阿里 280 -> 扫码登录 -> 复制一串 数字与字母的混合文本 -> 返回 -> 点击 阿里 280 的那个笔 -> 粘贴 -> 确定</p>
+                        
+                        <h5 class="mt-4">6. 更多帮助</h5>
+                        <p><strong>官方帮助页面：</strong></p>
+                        <div class="code-block">
+                            https://uz-video-five.vercel.app/help.html
+                        </div>
+                        <p><strong>GitHub：</strong></p>
+                        <div class="code-block">
+                            https://github.com/YYDS678/uzVideo
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download-section py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">立即下载 UZ影视 v1.6.52</h2>
+            <p class="lead mb-5">功能强大的多平台视频播放与管理软件<br>支持多种操作系统，随时随地享受优质观影体验</p>
+            
+            <div class="mb-4">
+                <h5 class="fw-bold">近期更新：</h5>
+                <p><strong>Ver.1.6.52</strong></p>
+                <ul class="list-unstyled">
+                    <li>✅ 支持视频嗅探</li>
+                    <li>✅ 优化扩展调试</li>
+                    <li>✅ 修复片尾设置</li>
+                    <li>✅ 修复部分源不能下载的问题</li>
+                </ul>
+                
+                <p><strong>Ver.1.6.51</strong></p>
+                <ul class="list-unstyled">
+                    <li>✅ 修复播放下载视频无法记录进度问题</li>
+                    <li>✅ 优化多线程检测</li>
+                    <li>✅ 优化弹幕匹配(v8)</li>
+                    <li>✅ TV 端补全播放设置</li>
+                    <li>✅ 支持读取阿里、夸克、UC 网盘(网盘扩展v11)</li>
+                    <li>✅ 入口 首页选源弹窗顶部的云朵按钮</li>
+                    <li>✅ 增加字幕记录功能</li>
+                    <li>✅ 桌面端下载列表支持右键菜单</li>
+                </ul>
+            </div>
+            
+            <!-- 更新下载链接 -->
+            <a href="https://tvbox-blw.pages.dev/" class="btn btn-primary btn-lg px-5 py-3 me-3 mb-3"><i class="fas fa-download me-2"></i>下载软件</a>
+        </div>
+    </section>
+
+    <footer class="py-4 bg-dark text-white">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 UZ影视. All Rights Reserved.</p>
+            <p class="small text-muted mt-1">本站仅提供应用介绍和信息分享，下载资源及链接来自互联网，版权归原作者所有。如有侵权，请联系我们删除。</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
